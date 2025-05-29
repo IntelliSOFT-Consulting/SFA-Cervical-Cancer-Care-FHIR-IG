@@ -1,7 +1,6 @@
 Profile: SFAProfile
 Parent: Patient
-Id: patient-profile
-Title: "Patient Profile"
+Id: patient-profile 
 Description: "Patient profile including ID document and contact details."
 
 // Name fields
@@ -40,9 +39,8 @@ Description: "Patient profile including ID document and contact details."
 * telecom[phone].value ^short = "Telephone Number"
 
 
-Instance: PatientExample
-InstanceOf: SFAProfile
-Title: "Example Patient"
+Instance: SFAPatientExample
+InstanceOf: SFAProfile 
 Description: "An example patient with ID Number and contact information."
 
 * name[0].given[0] = "John"
@@ -52,7 +50,7 @@ Description: "An example patient with ID Number and contact information."
 * birthDate = "1985-04-12"
 
 * identifier[0].system = "http://example.org/national-id"
-* identifier[0].value = "A123456789"
+* identifier[0].value = "30203020"
 * identifier[0].type = http://terminology.hl7.org/CodeSystem/v2-0203#PPN "Passport Number"
 
 * telecom[0].system = #email
